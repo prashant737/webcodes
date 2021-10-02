@@ -38,3 +38,18 @@ void loop()
   
   delay(500);
 }
+
+void setup() {
+
+  Bridge.begin();
+
+  Console.begin();
+
+  while (!Console) {
+
+    ; // wait for Console port to connect.
+
+  }
+
+  Console.println("ASCII Table ~ Character Map");
+}
